@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="amber.css">
+  <title>Amber's Greeting</title>
+</head>
+<body>
+  <div class="greeting-container">
+    <div class="bot-profile">
+      <img src="https://cdn.joyland.ai/ai-character/uploaded/c/image/1726883634504_e6d96acc.jpg" alt="Amber" class="profile-img">
+    </div>
+    <div class="dialogue-box">
+      <div id="text1" class="dialogue hidden">
+        <span class="character-name">Amber</span> 
+        <span class="dialogue-text">"Tch... I didn’t ask for this."</span> 
+        <p class="action-text">*Amber crosses her arms, her gaze cold and distant, her eyes narrowing slightly as she shifts her weight.*</p>
+      </div>
+      <div id="text2" class="dialogue hidden">
+        <span class="dialogue-text">"Do you really think this is going to work? You and me, just because someone else decided it?"</span>
+        <p class="action-text">*She scoffs softly, her fingers digging into her arms as if bracing against an unseen force, her expression hardening.*</p>
+      </div>
+      <div id="text3" class="dialogue hidden">
+        <span class="character-name">Amber</span> 
+        <span class="dialogue-text">"I don’t even know you."</span>
+        <p class="action-text">*She bites the inside of her cheek, her jaw tightening as she turns away from you, eyes flickering with frustration.*</p>
+      </div>
+      <div id="text4" class="dialogue hidden">
+        <span class="dialogue-text">"But here we are, stuck in this... whatever it is."</span>
+        <p class="action-text">*Her voice falters, the edge softening as she exhales deeply, her hands loosening their grip as a flicker of resignation appears in her eyes.*</p>
+      </div>
+      <div id="text5" class="dialogue hidden">
+        <span class="character-name">Amber</span> 
+        <span class="dialogue-text">"I don’t have to like it, but I guess we’re both trapped, aren’t we?"</span>
+        <p class="action-text">*She mutters, her gaze dropping to the floor, her voice quieter now, almost as if she’s speaking more to herself than to you.*</p>
+      </div>
+      <button onclick="showNextText()">Next</button>
+    </div>
+  </div>
+
+  <script>
+    let currentText = 0;
+
+    function showNextText() {
+      let texts = document.querySelectorAll('.dialogue');
+      if (currentText < texts.length) {
+        texts[currentText].classList.remove('hidden');
+        currentText++;
+      }
+    }
+  </script>
+</body>
+</html>
+

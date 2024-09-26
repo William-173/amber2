@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos%2Fbedroom-night&psig=AOvVaw35RskqxyhuFPb3nUL0Ve-n&ust=1727404960714000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCKpYrL34gDFQAAAAAdAAAAABAo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .greeting-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .bot-profile {
+    margin-right: 20px;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .dialogue-box {
+    flex-grow: 1;
+  }
+  
+  .dialogue {
+    margin-bottom: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .character-name {
+    color: #cc3333;
+    font-weight: bold;
+  }
+  
+  .dialogue-text {
+    color: #ff6666;
+  }
+  
+  .action-text {
+    font-style: italic;
+    color: lightgray;
+  }
+  
+  button {
+    background-color: #ff6666;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #cc3333;
+  }
+  
